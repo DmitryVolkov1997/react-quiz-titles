@@ -54,7 +54,7 @@ const QuizList = () => {
           </h1>
         </div> */}
         <h1 className={classes.title}>Список тестов</h1>
-        {loading ? <Loader /> : <ul>{renderQuizes()}</ul>}
+        {loading ? <Loader /> : <ul className={classes.list}>{renderQuizes()}</ul>}
       </div>
     </div>
   );
