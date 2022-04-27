@@ -1,0 +1,76 @@
+.FinishedQuiz {
+  padding: 2.5rem 3rem 2.5rem 3rem;
+  color: #2d2442;
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+
+  &__list {
+  }
+
+  &__item {
+    margin: 1rem 0px;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      max-width: 100%;
+    }
+
+    i {
+      margin-left: 1rem;
+    }
+  }
+
+  &__count {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(25, 135, 84);
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background: #007bff;
+    display: inline-block;
+    transition: background .3s linear;
+
+    &:hover {
+      background: #0263ca;
+    }
+  }
+
+  &__navigation {
+    color: #ffffff;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.borderTop {
+  border-top: 2px solid #dee2e6;
+  text-align: left;
+  padding-top: 2rem;
+  margin-top: 2.5rem;
+}
+
+.success {
+  color: rgb(25, 135, 84);
+}
+
+.error {
+  color: rgba(220, 53, 69, .9);
+}

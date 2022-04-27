@@ -1,0 +1,24 @@
+.ActiveQuiz{
+  padding: 2.5rem 3rem 0rem 3rem;
+  color: #2d2442;
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+
+  strong,
+  small {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  span {
+    max-width: 60rem;
+    padding-right: 1rem;
+  }
+}

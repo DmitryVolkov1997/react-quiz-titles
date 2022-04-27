@@ -1,0 +1,21 @@
+.quiz {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  padding: 10rem 0 0 0;
+  background: #fdfdfe;
+  color: #2d2442;
+}
+
+.wrapper {
+  width: 75rem;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #2D2442;
+  margin: 0rem 0rem 2rem 0rem;
+}
