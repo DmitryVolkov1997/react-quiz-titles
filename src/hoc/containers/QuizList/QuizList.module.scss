@@ -1,3 +1,10 @@
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
 .QuizList {
   display: flex;
   justify-content: center;
@@ -22,13 +29,51 @@
   font-size: 2rem;
   font-weight: 500;
   color: #2d2442;
+
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: .8rem 1.6rem;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 2rem;
+    max-width: 7rem;
+  }
 }
 
 .link {
   color: inherit;
   transition: color .22s ease-in;
+  display: flex;
+  align-items: center;
+  width: 100%;
 
   &:hover {
     color: #004085;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: #2D2442;
+    margin: 0rem 0rem 14rem 0rem;
+    text-align: center;
+    font-style: oblique;
   }
 }

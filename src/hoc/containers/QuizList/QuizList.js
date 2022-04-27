@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import axios from "../../../axios/axios-quiz";
 import Loader from "../../components/UI/Loader/Loader";
 import { titles } from "../QuizCreator/QuizCreator";
+import icon from "../../../img/icon-test.svg";
+// import logo from "../../../img/kstu-logo.png";
 
 const QuizList = () => {
   const [quizes, setQuizes] = useState([]);
@@ -14,6 +16,7 @@ const QuizList = () => {
       return (
         <li className={classes.item} key={quiz.id}>
           <NavLink className={classes.link} to={"/quiz/" + quiz.id}>
+            <img src={icon} alt="" />
             {quiz.name}
           </NavLink>
         </li>
@@ -43,7 +46,13 @@ const QuizList = () => {
 
   return (
     <div className={classes.QuizList}>
-      <div>
+      <div className={classes.container}>
+        {/* <div className={classes.header}>
+          <img src={logo} alt="" className={classes.header__logo} />
+          <h1 className={classes.header__title}>
+            НАО «Карагандинский технический университет имени Абылкаса Сагинова»
+          </h1>
+        </div> */}
         <h1 className={classes.title}>Список тестов</h1>
         {loading ? <Loader /> : <ul>{renderQuizes()}</ul>}
       </div>
