@@ -5,6 +5,7 @@ import axios from "../../../axios/axios-quiz";
 import Loader from "../../components/UI/Loader/Loader";
 import { titles } from "../QuizCreator/QuizCreator";
 import icon from "../../../img/icon-test.svg";
+import { IoSchoolSharp } from "react-icons/io5";
 // import logo from "../../../img/kstu-logo.png";
 
 const QuizList = () => {
@@ -16,7 +17,7 @@ const QuizList = () => {
       return (
         <li className={classes.item} key={quiz.id}>
           <NavLink className={classes.link} to={"/quiz/" + quiz.id}>
-            <img src={icon} alt="" />
+            <IoSchoolSharp className={classes.img} />
             {quiz.name}
           </NavLink>
         </li>
@@ -54,7 +55,11 @@ const QuizList = () => {
           </h1>
         </div> */}
         <h1 className={classes.title}>Список тестов</h1>
-        {loading ? <Loader /> : <ul className={classes.list}>{renderQuizes()}</ul>}
+        {loading ? (
+          <Loader />
+        ) : (
+          <ul className={classes.list}>{renderQuizes()}</ul>
+        )}
       </div>
     </div>
   );

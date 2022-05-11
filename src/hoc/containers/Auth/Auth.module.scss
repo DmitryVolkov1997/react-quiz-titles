@@ -1,7 +1,7 @@
 .auth {
   display: flex;
   justify-content: center;
-  padding-top: 10rem;
+  padding-top: 15rem;
   flex-grow: 1;
   width: 100%;
 }
@@ -13,7 +13,7 @@
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 700;
   font-size: 3.5rem;
   color: #2D2442;
@@ -27,4 +27,11 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1.5rem;
   border-radius: .5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: .7rem;
 }

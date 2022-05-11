@@ -211,20 +211,22 @@ class QuizCreator extends React.Component {
                 { text: 5, value: 5 },
               ]}
             />
-            <Button
-              type="primary"
-              disabled={!this.state.isFormValid}
-              onClick={this.addQuestionHandler}
-            >
-              Добавить вопрос
-            </Button>
-            <Button
-              type="success"
-              disabled={this.state.quiz.length === 0}
-              onClick={this.createQuizHandler}
-            >
-              Создать тест
-            </Button>
+            <div className={classes.buttons}>
+              <Button
+                type="primary"
+                disabled={!this.state.isFormValid}
+                onClick={this.addQuestionHandler}
+              >
+                Добавить вопрос
+              </Button>
+              <Button
+                type="success"
+                disabled={this.state.quiz.length === 0}
+                onClick={this.createQuizHandler}
+              >
+                Создать тест
+              </Button>
+            </div>
           </form>
         </div>
       </div>

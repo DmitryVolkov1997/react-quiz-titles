@@ -3,7 +3,7 @@
   justify-content: center;
   flex-grow: 1;
   //padding-top: 5rem;
-  padding-top: 10rem;
+  padding-top: 15rem;
   width: 100%;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
   font-size: 3.5rem;
   color: #2D2442;
@@ -25,4 +25,9 @@
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
 }

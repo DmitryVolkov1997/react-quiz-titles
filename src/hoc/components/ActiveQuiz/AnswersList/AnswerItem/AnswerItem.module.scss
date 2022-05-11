@@ -1,18 +1,21 @@
 .AnswerItem {
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.7rem;
   line-height: 2rem;
   font-weight: 500;
   border: 1px solid #84c5fe;
   border-radius: .5rem;
-  padding: .8rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   margin: 0rem 0rem 1.5rem 0rem;
   cursor: pointer;
   transition: background .22s ease-in-out, color .22s ease-in-out, border .22s ease-in-out;
 
-  &:hover {
-    background: #cce5ff;
-    color: #004085;
-    border: 1px solid #b8daff;
+  @media (min-width:991px) {
+    &:hover {
+      background: #cce5ff;
+      color: #004085;
+      border: 1px solid #b8daff;
+    }
   }
 
   &.success {
